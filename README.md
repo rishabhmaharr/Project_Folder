@@ -1,66 +1,41 @@
-Students Performance Analysis Project
-Overview
-This project analyzes the "StudentsPerformance (2).csv" dataset to explore student performance metrics, including math, reading, and writing scores. It includes data preprocessing, exploratory data analysis (EDA), feature engineering, machine learning model training (Logistic Regression and K-Nearest Neighbors), clustering (K-Means), and additional visualizations to identify trends and patterns.
+# 🎓 Student Performance Analyzer (SPA)
 
-Dataset
-File: StudentsPerformance (2).csv
-Location: Project_Folder/StudentsPerformance (2).csv
-Description: Contains student data with columns such as gender, race/ethnicity, parental level of education, lunch, test preparation course, math score, reading score, and writing score.
-Size: Approximately 1000 rows (assuming a standard dataset).
-Features
-Data Preprocessing: Handles missing values, duplicates, and encodes categorical variables.
-Exploratory Data Analysis (EDA): Visualizes score distributions, compares scores by gender, calculates mean scores by test preparation, and shows correlations.
-Feature Engineering: Creates an average_score, result (Pass/Fail), and result_label (binary) for modeling.
-Machine Learning: Trains Logistic Regression and KNN classifiers to predict pass/fail outcomes, with performance metrics.
-Clustering: Applies K-Means to group students based on their scores.
-Bonus Analysis: Visualizes average scores by lunch type and parental education level.
-Requirements
-Python: 3.7 or higher
-Libraries:
-pandas
-scikit-learn
-seaborn
-matplotlib
-Installation:
-text
+A Python-based data analysis tool that explores and models student performance data using **Pandas**, **Seaborn**, and **scikit-learn**. It performs EDA, classification (Logistic Regression & KNN), clustering (K-Means), and provides bonus insights like the impact of lunch, test preparation, and parental education.
 
-Collapse
+---
 
-Wrap
+## 📁 Dataset
 
-Copy
-pip install pandas scikit-learn seaborn matplotlib
-Usage
-Place the Dataset: Ensure StudentsPerformance (2).csv is in the Project_Folder directory.
-Run the Script: Execute the Main.py script:
-text
+The project uses the [StudentsPerformance.csv](StudentsPerformance.csv) dataset, which contains the following columns:
 
-Collapse
+- Gender
+- Race/ethnicity
+- Parental level of education
+- Lunch
+- Test preparation course
+- Math score
+- Reading score
+- Writing score
 
-Wrap
+---
 
-Copy
-python Main.py
-Output: The script generates plots (histograms, boxplots, heatmap, scatterplot, bar plots) and prints statistical results (null counts, duplicates, mean scores, confusion matrices, classification reports).
-Script Structure
-Data Preprocessing: Loads data, checks for nulls/duplicates, and encodes categorical variables.
-EDA: Displays visualizations and mean scores.
-Feature Engineering: Adds derived columns.
-Machine Learning: Trains and evaluates models.
-Clustering: Groups students into 3 clusters.
-Bonus Analysis: Shows score trends by lunch and education.
-Results
-Null Values: Expected to be 0 for all columns.
-Duplicates: Expected to be 0.
-EDA: Reveals score distributions, gender differences, and correlations.
-Machine Learning: Provides accuracy, precision, recall, and F1-scores for Logistic Regression and KNN.
-Clustering: Visualizes student groupings based on scores.
-Bonus: Highlights impact of lunch and parental education on average scores.
-Notes
-Ensure all required libraries are installed before running.
-Plots require a graphical interface; use Jupyter Notebook or an IDE with plot support if needed.
-Adjust the file path in pd.read_csv() if the dataset location changes.
-Author
-Created by [Your Name or Leave Blank]
-Date
-July 24, 2025
+## 🔧 Features
+
+- 📊 **EDA** with histograms, boxplots, and correlation heatmaps
+- 🤖 **Classification** using:
+  - Logistic Regression
+  - K-Nearest Neighbors (KNN)
+- 🔍 **Clustering** using K-Means with Elbow Method
+- 🎁 **Bonus Insights**:
+  - Lunch type vs performance
+  - Test preparation vs scores
+  - Parental education impact
+
+---
+
+## 🛠 Requirements
+
+Install dependencies using:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
